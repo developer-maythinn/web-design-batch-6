@@ -1,0 +1,8 @@
+<html> opening tag
+</html> closing tag
+
+<html></html> html element
+<p></p> p element
+<title></title> title element
+
+<br/> self closing tag or empty tag
