@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .card {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        margin: 50px auto;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 10px 10px 20px gray, -10px -10px 5px #000;
+      }
+      .card img {
+        width: inherit;
+        height: inherit;
+      }
+      .card .detail {
+        background-color: rgba(165, 42, 42, 0.8);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        color: #fff;
+      }
+      .card .detail h2 {
+        margin-bottom: 5px;
+      }
+      .para {
+        height: 800px;
+        background-color: pink;
+      }
+      button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+      h1 {
+        text-shadow: 5px 4px 6px #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <div class="card">
+      <img
+        src="https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="img"
+      />
+      <div class="detail">
+        <h2>Heading 2</h2>
+        <p>This is paragraph.</p>
+      </div>
+    </div>
+
+    <button>Button Fixed</button>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reiciendis,
+      qui explicabo perferendis at sequi nobis omnis adipisci optio, dolore odit
+      distinctio. Architecto commodi, eius veniam veritatis sed fuga ut.
+    </p>
+  </body>
+</html>
