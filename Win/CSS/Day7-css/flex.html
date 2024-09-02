@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: wrap; */
+      }
+      .container span {
+        background-color: brown;
+        color: #fff;
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 4px;
+      }
+      .container span:nth-child(1) {
+        order: 2;
+        background-color: rgb(40, 195, 38);
+      }
+      .container span:nth-child(2) {
+        order: 3;
+        background-color: rgb(61, 101, 223);
+        /* align-self: flex-start; */
+        /* flex-grow: 6; */
+      }
+      .container span:nth-child(3) {
+        order: 1;
+        background-color: rgb(184, 26, 142);
+        /* align-self: flex-end; */
+        /* flex-grow: 2; */
+        flex-shrink: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+    </div>
+  </body>
+</html>
