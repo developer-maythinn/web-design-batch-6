@@ -1,0 +1,14 @@
+body{
+    background-color: pink;
+}
+$main-color: rgb(179, 29, 89);
+.container{
+    .card{
+        h1{
+            color: $main-color;
+        }
+        p{
+            color: $main-color;
+        }
+    }
+}

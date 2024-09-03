@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+      }
+      .box:hover {
+        animation-name: myAnimate2;
+        animation-duration: 2s;
+        animation-delay: 2s;
+      }
+      @keyframes myAnimate {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: green;
+        }
+      }
+      @keyframes myAnimate2 {
+        0% {
+          background-color: red;
+        }
+        50% {
+          background-color: aqua;
+          transform: translateX(30px);
+        }
+        75% {
+          background-color: green;
+        }
+        100% {
+          background-color: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <h1 class="animate__animated animate__rotateIn">An animated element</h1>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+body {
+  background-color: pink;
+}
+
+.container .card h1 {
+  color: rgb(179, 29, 89);
+}
+.container .card p {
+  color: rgb(179, 29, 89);
+}/*# sourceMappingURL=styles.css.map */
