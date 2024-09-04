@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter.ttf');
+}
+:root{
+    --grey900:  hsl(0, 0%, 8%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey700: hsl(0, 0%, 20%);
+    --white: hsl(0, 0%, 100%);
+    --green: hsl(75, 94%, 57%);
+    --font-size-m: 14px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+   color: var(--white);
+   font-size: var(--font-size-m);
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--grey900);
+    padding: 50px;
+}
+.container .card{
+    width: 320px;
+    background-color: var(--grey800);
+    text-align: center;
+    margin: 0 auto;
+   padding: 24px;
+   border-radius: 10px;
+}
+.container .card img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.container .card h1{
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+.container .card .place{
+    color: var(--green);
+    margin-top: 5px;
+}
+.container .card .para{
+    margin: 14px 0;
+}
+.container .card .btn-gp button{
+    width: 100%;
+    padding: 8px;
+    background-color: var(--grey900);
+    margin: 4px;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.container .card .btn-gp button:hover{
+    background-color: var(--green);
+    color: var(--grey900);
+}
