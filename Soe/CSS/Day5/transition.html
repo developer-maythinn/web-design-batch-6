@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(49, 113, 240);
+      }
+      .box:hover {
+        /* background-color: green; */
+        /* transition-duration: 2s;
+        transition-delay: 3s; */
+        animation-name: myAnimate2;
+        animation-duration: 3s;
+      }
+      @keyframes myAnimate {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: blueviolet;
+        }
+      }
+      @keyframes myAnimate2 {
+        0% {
+          background-color: red;
+        }
+        50% {
+          background-color: green;
+          transform: translateX(100px);
+        }
+        100% {
+          background-color: brown;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

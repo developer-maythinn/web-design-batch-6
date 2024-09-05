@@ -1,0 +1,21 @@
+@import "./variables";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card-container{
+    .card{
+        h1{
+            color: $main-color;
+        }
+        p{
+            color: $main-color;
+        }
+        button{
+            background-color:$main-color;
+        }
+    }
+}
