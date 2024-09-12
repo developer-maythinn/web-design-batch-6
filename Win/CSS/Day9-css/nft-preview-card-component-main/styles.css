@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+.outfit-weight400 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  background-color: hsl(216, 50%, 16%);
+  width: 320px;
+  height: auto;
+  padding: 20px;
+  border-radius: 12px;
+}
+.container .card:hover .img-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 98%;
+  background-color: hsla(178, 100%, 50%, 0.4);
+  border-radius: 6px;
+}
+.container .card:hover .img-container .view {
+  display: block;
+}
+.container .card:hover h2 {
+  color: hsl(178, 100%, 50%);
+}
+.container .card .img-container {
+  position: relative;
+}
+.container .card .img-container .main-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.container .card .img-container .view {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+.container .card h2 {
+  color: hsl(0, 0%, 100%);
+  margin-top: 10px;
+}
+.container .card .para {
+  color: hsl(215, 51%, 70%);
+  margin: 10px 0;
+}
+.container .card .detail-content {
+  display: flex;
+  justify-content: space-between;
+}
+.container .card .detail-content .eth, .container .card .detail-content .time {
+  display: flex;
+  align-items: center;
+}
+.container .card .detail-content .eth img, .container .card .detail-content .time img {
+  margin-right: 5px;
+}
+.container .card .detail-content .eth span {
+  color: hsl(178, 100%, 50%);
+}
+.container .card .detail-content .time span {
+  color: hsl(215, 51%, 70%);
+}
+.container .card hr {
+  margin: 15px 0;
+  border: 1px solid hsl(215, 32%, 27%);
+}
+.container .card .profile {
+  display: flex;
+  align-items: center;
+}
+.container .card .profile img {
+  width: 30px;
+  height: 30px;
+}
+.container .card .profile span {
+  color: hsl(215, 51%, 70%);
+  padding: 0 10px;
+}
+.container .card .profile b {
+  color: hsl(0, 0%, 100%);
+}/*# sourceMappingURL=styles.css.map */
