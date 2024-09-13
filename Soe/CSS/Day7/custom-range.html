@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Range Slider</title>
+    <style>
+      .range-slider {
+        width: 100%;
+        max-width: 400px;
+        margin: 50px auto;
+      }
+
+      input[type="range"] {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 8px;
+        background: linear-gradient(
+          90deg,
+          #f9b0b0,
+          #ee4f8e
+        ); /* Default background */
+        border-radius: 10px;
+        outline: none;
+        transition: background 0.3s;
+      }
+
+      input[type="range"]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 8px;
+        cursor: pointer;
+        background: linear-gradient(
+          90deg,
+          #f9b0b0,
+          #ee4f8e
+        ); /* Same gradient */
+        border-radius: 10px;
+      }
+
+      /* Custom thumb for Chrome, Safari, and Edge */
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        background: #ffffff;
+        border-radius: 50%;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        margin-top: -4px; /* Centers the thumb */
+      }
+
+      input[type="range"]::-moz-range-thumb,
+      input[type="range"]::-ms-thumb {
+        width: 16px;
+        height: 16px;
+        background: #ffffff;
+        border-radius: 50%;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+      }
+
+      /* Range track styling for Firefox */
+      input[type="range"]::-moz-range-track {
+        background: none;
+      }
+
+      input[type="range"]::-ms-track {
+        width: 100%;
+        height: 8px;
+        background: none;
+        border-color: transparent;
+        color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="range-slider">
+      <input type="range" min="0" max="100" value="50" id="range-slider" />
+    </div>
+
+    <script>
+      const rangeInput = document.getElementById("range-slider");
+
+      function updateRangeBackground(value) {
+        const min = rangeInput.min;
+        const max = rangeInput.max;
+        const percentage = ((value - min) / (max - min)) * 100;
+
+        // Set the gradient based on the value
+        rangeInput.style.background = `linear-gradient(90deg, #ee4f8e ${percentage}%, #1e1e4d ${percentage}%)`;
+      }
+
+      // Initial gradient setup
+      updateRangeBackground(rangeInput.value);
+
+      // Update the gradient when the slider is moved
+      rangeInput.addEventListener("input", (event) => {
+        updateRangeBackground(event.target.value);
+      });
+    </script>
+  </body>
+</html>
