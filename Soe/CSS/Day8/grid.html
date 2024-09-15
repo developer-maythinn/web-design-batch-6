@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(152, 201, 244);
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(180px, auto);
+      }
+      div {
+        background-color: pink;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .one {
+        /* grid-column-start: 1;
+        grid-column-end: 3; */
+        grid-column: 1/3;
+        background-color: blueviolet;
+      }
+      .two {
+        background-color: rgb(38, 36, 36);
+      }
+      .three {
+        grid-column: 4/5;
+        grid-row: 1/3;
+        background-color: #fff;
+      }
+      .five {
+        grid-column: 2/4;
+        background-color: rgb(16, 2, 2);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+      <div class="five">5</div>
+    </section>
+  </body>
+</html>

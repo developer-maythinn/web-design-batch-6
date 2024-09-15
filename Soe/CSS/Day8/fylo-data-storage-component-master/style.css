@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  max-width: 1440px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-color: hsl(229, 57%, 11%);
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+body .container .left-side {
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 5px 40px 5px 5px;
+  width: 200px;
+  height: 130px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .container .left-side .logo {
+  width: 80px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 10px;
+}
+body .container .left-side .icon-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+body .container .left-side .icon-container .img-container {
+  display: flex;
+  width: 30px;
+  height: 25px;
+  background-color: hsl(229, 57%, 11%);
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+body .container .left-side .icon-container .img-container img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 12px;
+  height: 12px;
+}
+body .container .right-side {
+  background-color: hsl(228, 56%, 26%);
+  width: 400px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  position: relative;
+  border-radius: 5 px;
+}
+body .container .right-side .message {
+  color: hsl(243, 100%, 93%);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+body .container .right-side input {
+  width: 100%;
+}
+body .container .right-side .storage {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: small;
+  font-weight: 800;
+}
+body .container .right-side .total {
+  background-color: #fff;
+  display: flex;
+  padding: 10px;
+  position: absolute;
+  right: 25px;
+  top: -25px;
+  border-radius: 10px;
+}
+body .container .right-side .total::before {
+  content: "";
+  border: 20px solid transparent;
+  border-right-color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: url("images/bg-mobile.png");
+  }
+  body .container {
+    flex-direction: column;
+    width: 100%;
+    padding: 24px;
+  }
+  body .container .left-side, body .container .right-side {
+    width: 100%;
+    padding: 40px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .container .left-side .logo {
+    width: 100px;
+  }
+  body .container .left-side .icon-container .img-container {
+    width: 40px;
+    height: 40px;
+  }
+  body .container .left-side .icon-container .img-container img {
+    width: 20px;
+    height: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

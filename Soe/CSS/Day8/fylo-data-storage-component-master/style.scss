@@ -1,0 +1,171 @@
+$Pale-Blue: hsl(243, 100%, 93%);
+$Grayish-Blue: hsl(229, 7%, 55%);
+$Dark-Blue: hsl(228, 56%, 26%);
+$Very-Dark-Blue: hsl(229, 57%, 11%);
+$Gradient-color1: hsl(6, 100%, 80%) ;
+$Gradient-color2:hsl(335, 100%, 65%);
+$white:#fff;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+body{
+//    background-image:url("images/bg-desktop.png");
+    max-width: 1440px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-color: $Very-Dark-Blue;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .container{
+      display: flex; 
+      gap: 20px; 
+       align-items: flex-end;
+     
+        
+
+        .left-side{
+            background-color: $Dark-Blue;
+            border-radius: 5px 40px 5px 5px;
+            width: 200px;
+            height:130px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+           justify-content: center;
+            .logo{
+              width: 80px;
+              height: fit-content;
+              margin-bottom: 10px;
+
+
+            }
+
+            .icon-container{
+                display: flex;
+                gap: 10px;
+                margin-top: 12px;
+               
+
+                .img-container{
+                    display: flex;
+                    width: 30px;
+                    height: 25px;
+                    background-color: $Very-Dark-Blue;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 8px;
+
+                    img{
+                        object-fit: contain;
+                        width: 12px;
+                        height: 12px;
+      
+                      }
+                }
+               
+
+              
+            }
+            
+
+           
+        }
+
+        .right-side{
+            background-color: $Dark-Blue;
+            width: 400px;
+            height: fit-content;
+            padding: 20px;
+            position: relative;
+            border-radius: 5    px;
+          
+            .message{
+                 color: $Pale-Blue;
+                 font-size: 14px;
+                margin-bottom: 10px;
+               
+            }
+            input{
+               width: 100%;
+            }
+            .storage{
+                display: flex;
+                justify-content: space-between;
+                color: $white;
+                font-size: small;
+                font-weight: 800;
+                
+            }
+            .total{
+                background-color:$white;
+                display: flex;
+                padding: 10px;
+                position: absolute;
+                right: 25px;
+                top: -25px;
+                border-radius: 10px;
+                
+
+                &::before{
+                    content: "";
+                    border: 20px solid transparent;
+                    border-right-color: $white;
+                    position: absolute;
+                    right: 0;
+                    bottom: -20px;
+                    
+                }
+             
+            }
+        }
+
+    }
+    
+}
+
+@media (max-width: 767px){
+    body{
+        background-image: url("images/bg-mobile.png");
+        .container{
+            flex-direction: column;
+            width: 100%;
+            padding: 24px;
+            .left-side, .right-side{
+                width: 100%;
+                padding: 40px;
+                height: fit-content;
+            }
+            .left-side{
+                .logo{
+                    width: 100px;
+                }
+                .icon-container{
+                    
+                    .img-container{
+                        width: 40px;
+                        height: 40px;
+                        img{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
