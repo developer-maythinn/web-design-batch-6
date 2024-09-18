@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  width: 320px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 5px;
+  padding: 24px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+.container .card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.container .card h1 {
+  font-size: 1.2rem;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.container .card .place {
+  font-size: 14px;
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+}
+.container .card .para {
+  font-size: 14px;
+  margin: 20px 0;
+}
+.container .card .btns a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  display: block;
+  background-color: hsl(0, 0%, 20%);
+  padding: 8px 0;
+  margin: 12px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.container .card .btns a:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}/*# sourceMappingURL=styles.css.map */

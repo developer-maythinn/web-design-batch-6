@@ -9,8 +9,11 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(150px, auto);
+    // grid-auto-rows: auto;
+    //  minmax(150px, auto);
+    grid-template-rows: auto;
     grid-template-areas: 
+    "one two two three"
     "one two two three"
     "four five six three"
     "four seven eight eight"
@@ -19,6 +22,9 @@
         background-color: pink;
         text-align: center;
         padding: 20px; 
+        img{
+            width: 100%;
+        }
         &:nth-child(1){
             grid-area: one;
         } 
@@ -43,6 +49,9 @@
         &:nth-child(8){
             grid-area: eight;
         } 
+    }
+    .item1{
+        padding: 50px 0px;
     }
     
 }

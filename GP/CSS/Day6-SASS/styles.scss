@@ -1,0 +1,16 @@
+
+$main-color: blue;
+
+.container-card{
+    .card{
+        h1{
+            color: $main-color;
+        }
+        p{
+            color: $main-color;
+        }
+        button{
+            background-color: $main-color;
+        }
+    }
+}

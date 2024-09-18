@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        grid-template-rows: auto 1fr; /* First row is auto, second row takes remaining space */
+        gap: 10px;
+        height: 50vh; /* Full viewport height */
+      }
+
+      .long-height {
+        grid-column: 1 / 2; /* First column */
+        grid-row: span 2; 
+        /* Span across two rows to make it long */
+        background-color: lightblue;
+      }
+
+      .small-height {
+        background-color: lightcoral;
+      }
+
+      .another-small {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="long-height">Long Height Column</div>
+      <div class="small-height">Small Column</div>
+      <div class="another-small">Another Small Column</div>
+    </div>
+  </body>
+</html>
