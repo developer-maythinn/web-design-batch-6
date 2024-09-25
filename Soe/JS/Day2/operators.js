@@ -44,11 +44,15 @@
 // console.log(result);
 
 // JavaScript Logical Operators
-let username = "John";
-console.log(username === "John");
-console.log(typeof username === "string");
+// let username = "John";
+// console.log(username === "John");
+// console.log(typeof username === "string");
 // console.log(username === "John" && typeof username === "number");
 
 // console.log(username === "John" || typeof username === "number");
-let result = !(username === "John");
+// let result = !(username === "John");
+// console.log(result);
+
+let username = "John";
+let result = username === "John" ? "Hello" : "Nothing";
 console.log(result);
