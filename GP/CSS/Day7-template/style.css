@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.main-container::before {
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6470588235);
+  position: absolute;
+}
+.main-container header nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  padding: 20px 30px;
+  width: 100%;
+}
+.main-container header nav h3 {
+  color: #fff;
+}
+.main-container header nav ul {
+  display: flex;
+  list-style: none;
+}
+.main-container header nav ul li {
+  margin: 0 20px;
+}
+.main-container header nav ul li a {
+  color: #fff;
+}
+.main-container header nav ul .dropdown-container {
+  position: relative;
+}
+.main-container header nav ul .dropdown-container:hover .dropdown {
+  margin-top: 10px;
+  display: block;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  font-weight: 400;
+  width: 100px;
+  border-radius: 6px;
+}
+.main-container header nav ul .dropdown-container:hover .dropdown li {
+  margin: 0;
+  font-size: 14px;
+  padding: 7px 0;
+}
+.main-container header nav ul .dropdown-container i {
+  color: #fff;
+}
+.main-container header nav ul .dropdown-container .dropdown {
+  display: none;
+}
+.main-container .main-img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-container .content {
+  max-width: 500px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  height: 100px;
+  text-align: center;
+  color: #fff;
+}
+.main-container .content h2 {
+  font-size: clamp(24px, 3vw, 2rem);
+}
+.main-container .content h2 span {
+  color: yellow;
+}
+.main-container .content p {
+  padding-bottom: 10px;
+  line-height: 1.5;
+}
+.main-container .content button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: yellow;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.main-container .content button:hover {
+  background-color: yellow;
+  color: #333;
+  transition: 1s;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .main-container header nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-container header nav h3 {
+    margin-bottom: 10px;
+  }
+  .main-container header nav ul li {
+    margin: 0px 14px;
+  }
+  .main-container .content {
+    padding: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
