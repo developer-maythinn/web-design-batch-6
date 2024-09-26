@@ -1,6 +1,5 @@
 
 
-*******************************************************************
 
 Objects
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
@@ -114,4 +113,4 @@ console.log(red); // "one"
 console.log(yellow); // "two"
 console.log(green); // "three"
 
-**************************************************************  day3 end
+**************************************************************  day4 end

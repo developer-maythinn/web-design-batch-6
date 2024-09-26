@@ -174,7 +174,7 @@ An IIFE (Immediately Invoked Function Expression)
   let x = "Hello!!";  // I will invoke myself
 })();
 
-3. Hoisting
+4. Hoisting
 let test = myfunc(3);
  function myfunc(num1) {
      console.log(num1 + num1)
