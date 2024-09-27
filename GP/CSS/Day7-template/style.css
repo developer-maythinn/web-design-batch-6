@@ -108,6 +108,161 @@ a {
   font-weight: 500;
 }
 
+.about-container .left-side {
+  width: 100%;
+}
+.about-container .left-side .about-img {
+  width: 100%;
+}
+.about-container .right-side {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.about-container .right-side i {
+  font-size: 4rem;
+  color: gray;
+}
+.about-container .right-side h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+.about-container .right-side p {
+  text-indent: 3rem;
+  line-height: 1.8;
+}
+.about-container .right-side .right-icon {
+  align-self: flex-end;
+}
+
+.team-container h2 {
+  text-align: center;
+  -webkit-text-decoration: overline aqua;
+          text-decoration: overline aqua;
+}
+.team-container .card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 2rem;
+}
+.team-container .card-container .card {
+  padding: 1.2rem;
+  background-image: linear-gradient(45deg, rgb(229, 229, 9), rgb(34, 215, 215));
+  margin: 1rem;
+  text-align: center;
+}
+.team-container .card-container .card .img-container {
+  margin-bottom: 0.6rem;
+}
+.team-container .card-container .card .img-container:hover {
+  overflow: hidden;
+}
+.team-container .card-container .card .img-container:hover img {
+  transform: scale(1.2);
+  transition: 1s;
+}
+.team-container .card-container .card .img-container img {
+  width: 100%;
+}
+.contact-container {
+  background-color: #1e1c1d;
+}
+.contact-container h2 {
+  text-align: center;
+  padding: 2rem 0 0;
+  color: #fff;
+}
+.contact-container .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh;
+}
+.contact-container .form-container form input, .contact-container .form-container form textarea {
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.contact-container .form-container form textarea {
+  height: 200px;
+}
+.contact-container .form-container form .submit {
+  width: initial;
+}
+
+footer {
+  display: flex;
+  background-color: #2a2626;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+footer p {
+  color: #fff;
+}
+footer .icon-container {
+  display: flex;
+  margin-top: 10px;
+}
+footer .icon-container a {
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
+  color: #fff;
+}
+footer .icon-container a:nth-child(1) {
+  background-color: #3b5998;
+}
+footer .icon-container a:nth-child(2) {
+  background-color: #1ea1f1;
+}
+footer .icon-container a:nth-child(3) {
+  background-color: #784f99;
+}
+footer .icon-container a:nth-child(4) {
+  background-color: #2578af;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-container .form-container {
+    min-height: 50vh;
+  }
+}
+@media (min-width: 992px) {
+  .about-container {
+    display: flex;
+    padding: 3rem;
+  }
+  .about-container .left-side, .about-container .right-side {
+    width: 50%;
+  }
+  .about-container .right-side .left-icon {
+    transform: translateY(-30px);
+  }
+  .team-container .card-container {
+    flex-direction: row;
+  }
+  .contact-container .form-container {
+    min-height: 80vh;
+  }
+  .contact-container .form-container form input, .contact-container .form-container form textarea {
+    width: 400px;
+  }
+  footer {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
 @media (max-width: 767px) {
   .main-container header nav {
     flex-direction: column;
