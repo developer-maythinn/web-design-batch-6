@@ -28,9 +28,15 @@ let fruits = ["apple", "orange", "mango"];
 // const sum = (num1, num2) => num1 + num2;
 
 // console.log(sum(10, 5));
-let text = "";
-let fruitForEach = fruits.forEach((item) => text += item);
-let fruitMap = fruits.map((item) => (text += item));
+// let text = "";
+// let fruitForEach = fruits.forEach((item) => text += item);
+// let fruitMap = fruits.map((item) => (text += item));
 
+// console.log(text);
 
-console.log(text);
+// reduce
+let arr = [1, 2, 3, 4, 5];
+
+let result = arr.reduce((sum, current) => sum + current, 0);
+
+console.log(result);

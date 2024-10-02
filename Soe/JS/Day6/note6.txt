@@ -46,3 +46,47 @@ Math.floor(4.7);    // returns 4
 
 Math.random() returns a random number between 0 (inclusive), and 1 (exclusive):
 Math.random();     // returns a random number
+
+*********************************************************
+
+What is the DOM?(Document Object Model)
+The DOM is a W3C (World Wide Web Consortium) standard.
+The DOM defines a standard for accessing documents:
+"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+
+The W3C DOM standard is separated into 3 different parts:
+
+Core DOM - standard model for all document types
+XML DOM - standard model for XML documents
+HTML DOM - standard model for HTML documents
+
+HTML DOM
+When a web page is loaded, the browser creates a Document Object Model of the page
+With the object model, JavaScript gets all the power it needs to create dynamic HTML
+change, remove, add ( HTML elements and attributes )
+change all the CSS styles in the page
+create new HTML events
+react to all existing HTML events in the page
+The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+
+DOM Element 
+https://www.w3schools.com/jsref/dom_obj_attributes.asp
+html object collections
+         document.anchors
+         document.body
+         document.documentElement
+         document.embeds
+         document.forms
+         document.head
+         document.images
+         document.links
+         document.scripts
+         document.title
+
+Finding HTML elements by
+ id ( getElementById )
+tag name ( getElementsByTagName )
+class name ( getElementsByClassName )
+css selectors ( querySelectorAll("p.intro") )
+
+
