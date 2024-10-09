@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      id="myImg"
+      src="https://images.pexels.com/photos/13574108/pexels-photo-13574108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      alt="img"
+    />
+    <button onclick="change()">Change Image</button>
+    <script>
+      function change() {
+        let orgImg = document.getElementById("myImg");
+        orgImg.src =
+          "https://images.pexels.com/photos/15187362/pexels-photo-15187362/free-photo-of-a-cup-of-coffee-and-a-book-on-a-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+      }
+    </script>
+  </body>
+</html>

@@ -19,8 +19,19 @@
 // let h1Tags = document.getElementsByTagName("h1")[1];
 // console.log(h1Tags);
 
-// let introClass = document.getElementsByClassName("intro");
-// console.log(introClass);
+let introClass = document.getElementsByClassName("intro");
+// introClass.style.color = "red";
+// introClass.style.backgroundColor = "green";
 
-console.log(document.querySelector(".intro"));
+// introClass[0].style.cssText = `color: blue; background-color: pink`;
+// introClass[1].style.cssText = `color: blue; background-color: pink`;
+// introClass[2].style.cssText = `color: blue; background-color: pink`;
+// introClass[3].style.cssText = `color: blue; background-color: pink`;
+
+for (let item of introClass) {
+  item.style.cssText = `color: #fff; background-color: brown; margin: 10px 0`;
+}
+console.log(introClass);
+
+// console.log(document.querySelector(".intro"));
 // console.log(document.querySelectorAll("h2.intro"));

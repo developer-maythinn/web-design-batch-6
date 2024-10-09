@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+  </head>
+  <body>
+    <div id="time"></div>
+    <div id="date"></div>
+    <button onclick="clearInterval(myTime)">Stop</button>
+    <script>
+      let myTime = setInterval(myClock, 1000); // 1000 = 1s
+      function myClock() {
+        let currentTime = new Date();
+        let day = currentTime.getDay();
+
+        switch (day) {
+          case 1:
+            day = "Monday";
+            break;
+          case 2:
+            day = "Tueday";
+            break;
+          case 3:
+            day = "Wednesday";
+            break;
+          default:
+            day = "Other day";
+            break;
+        }
+        document.getElementById("time").innerHTML =
+          currentTime.toLocaleTimeString();
+        document.getElementById(
+          "date"
+        ).innerHTML = `${day}, ${currentTime.toLocaleDateString()}`;
+        console.log(day);
+      }
+    </script>
+  </body>
+</html>

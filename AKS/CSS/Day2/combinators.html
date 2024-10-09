@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div p {
+        background-color: blueviolet;
+      } */
+      /* div > p {
+        background-color: blueviolet;
+      } */
+      /* div + p{
+            background-color: blueviolet;
+        } */
+      div ~ p {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <p>P1</p>
+    <div>
+      <!-- p*2 -->
+      <p>P1 in Div</p>
+      <p>P2 in Div</p>
+      <section>
+        <p>P1 in section</p>
+      </section>
+    </div>
+    <p>P2</p>
+    <p>P3</p>
+  </body>
+</html>

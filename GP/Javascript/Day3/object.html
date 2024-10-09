@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      // Object literal
+      //   let user = {
+      //     name: "John",
+      //     age: 20,
+      //   };
+      //   console.log(user, typeof user);
+
+      // let myObj = new Object();
+      // myObj.name = "John";
+      // myObj.age = 20
+      // console.log(myObj)
+
+      function myFruit(name, price) {
+        this.fruitName = name;
+        this.price = price
+        this.city = "Ygn"
+      }
+     
+      let myObj = new myFruit("apple", "$10");
+      console.log(myObj);
+    </script>
+  </body>
+</html>
