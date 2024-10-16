@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let fruits = ["apple", "orange", "mango"];
+      //   fruits.splice(2, 1, "kiwi", "pineapple");
+      //   console.log(fruits);
+
+      let users = [
+        {
+          name: "Person 1",
+          age: 30,
+          city: "Ygn",
+        },
+        {
+          name: "Person 2",
+          age: 20,
+          city: "Mdy",
+        },
+        {
+          name: "Person 3",
+          age: 20,
+          city: "Mdy",
+        },
+      ];
+      console.log(users[0].name, users[0].age);
+      console.log(users[1].name);
+      console.log(users[2].name);
+
+      //   function createUser(name) {
+      //     return name;
+      //   }
+      //   const createUser = (name) => name;
+      // console.log(createUser("John"));
+
+      //   let getAllNames = users.map((user) => {
+      //     const { name, age, city } = user;
+      //     return `${name}. Age is ${age} and live in ${city}`;
+      //   });
+      //   console.log(getAllNames);
+
+      //   let getAllNames = users.forEach((user) => {
+      //     const { name, age, city } = user;
+      //     console.log(user);
+      //     return `${name}. Age is ${age} and live in ${city}`; // undefined
+      //   });
+      //   console.log(getAllNames);
+
+      const words = [
+        "spray",
+        "limit",
+        "elite",
+        "exuberant",
+        "destruction",
+        "present",
+      ];
+      const result = words.filter((word) => word.length > 6);
+      console.log(result);
+    </script>
+  </body>
+</html>
