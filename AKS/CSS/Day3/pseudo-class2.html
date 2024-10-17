@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* p:first-child{
+            background-color: green;
+        } */
+      /* p:first-of-type{
+            background-color: blue;
+         } */
+      p:nth-child(odd) {
+        background-color: gray;
+      }
+      p:nth-child(even) {
+        background-color: green;
+      }
+      p{
+        color: brown;
+      }
+      :not(p){
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>P1</p>
+    <p>P2</p>
+    <p>P3</p>
+    <p>P4</p>
+    <h1>H1</h1>
+    <div>
+      <p>P1 in div</p>
+      <p>P2 in div</p>
+    </div>
+    <h2>H2</h2>
+  </body>
+</html>
