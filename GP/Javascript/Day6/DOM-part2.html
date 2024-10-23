@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="intro">Intro 1</p>
+    <p class="intro">Intro 2</p>
+    <p class="intro">Intro 3</p>
+    <h2 class="intro">Intro h2</h2>
+
+    <script>
+      //   let myDiv = document.createElement("div");
+      //   let textNode = document.createTextNode("Hello World");
+      //   myDiv.appendChild(textNode);
+
+      //   console.log(myDiv);
+      //   console.log(textNode);
+
+      //   let bodyElement = document.body;
+      //   bodyElement.appendChild(myDiv);
+      //   myDiv.style.color = "red";
+      //   myDiv.style.backgroundColor = "pink";
+
+      let introClass = document.getElementsByClassName("intro");
+      console.log((introClass[0].style.color = "red"));
+    //   introClass[0].style.color = "red";
+    //   introClass[1].style.color = "red";
+    //   introClass[2].style.color = "red";
+    //   introClass[3].style.color = "red";
+
+    for(let item of introClass){
+        console.log(item.style)
+        // item.style.color = "blue";
+        // item.style.backgroundColor = "yellow";
+        item.style.cssText = `
+            color: hotpink;
+            background-color: pink;
+        `
+    }
+
+    </script>
+  </body>
+</html>
