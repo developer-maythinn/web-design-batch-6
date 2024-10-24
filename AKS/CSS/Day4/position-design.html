@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html{
+        scroll-behavior: smooth;
+      }
+      .card {
+        width: 400px;
+        height: 400px;
+        background-color: brown;
+        margin: 50px auto;
+        position: relative;
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 4px 10px 10px red, -10px -10px 20px blue;
+      }
+      .card img {
+        width: inherit;
+        height: inherit;
+      }
+      .card .content {
+        background-color: rgba(165, 42, 42, 0.699);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+      }
+      .para {
+        height: 1000px;
+        background-color: pink;
+      }
+      button {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+      }
+      h1{
+        text-shadow: 10px 10px 4px red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <div class="card" id="card-container">
+      <img
+        src="https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="img"
+      />
+      <div class="content">
+        <h2>Heading 2</h2>
+        <p>This is Paragraph.</p>
+      </div>
+    </div>
+    <a href="#card-container">
+      <button>Go to top</button>
+    </a>
+    <p class="para">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore eaque
+      vitae iure quia, ab, quo molestiae libero enim, sequi eius explicabo. Ut
+      temporibus quo placeat molestiae, mollitia dolores ullam aliquam.
+    </p>
+  </body>
+</html>
