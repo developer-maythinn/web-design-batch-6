@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      id="img1"
+      src="https://images.pexels.com/photos/27351134/pexels-photo-27351134/free-photo-of-a-boat-by-the-pier.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      alt="img"
+      style="width: 200px; height: 200px; object-fit: cover"
+    />
+    <button ondblclick="change()">Change Image</button>
+
+    <script>
+      function change() {
+        let orgImg = document.getElementById("img1");
+        orgImg.src =
+          "https://images.pexels.com/photos/29006818/pexels-photo-29006818/free-photo-of-autumn-leaves-in-rippling-stream.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+        orgImg.alt = "hello";
+      }
+    </script>
+  </body>
+</html>
