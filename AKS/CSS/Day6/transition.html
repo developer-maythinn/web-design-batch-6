@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        background-color: brown;
+        transition-duration: 1s;
+      }
+      /* .box:hover {
+        background-color: yellow;
+      } */
+
+      .box:hover {
+        animation-name: animate-color;
+        animation-duration: 3s;
+        animation-iteration-count: 2;
+      }
+
+      @keyframes myAnimate {
+        from {
+          background-color: rgb(59, 183, 235);
+        }
+        to {
+          background-color: green;
+        }
+      }
+
+      @keyframes animate-color {
+        0% {
+          background-color: rgb(28, 0, 128);
+        }
+        50% {
+          background-color: rgb(128, 0, 79);
+          transform: translateX(200px);
+        }
+        100% {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <h1 class="animate__animated animate__slideInUp">An animated element</h1>
+  </body>
+</html>
