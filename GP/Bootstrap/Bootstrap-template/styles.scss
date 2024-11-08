@@ -48,3 +48,44 @@
         text-indent: 2rem;
     }
 }
+
+.card-section{
+    background-image: url("bg-img.jpg");
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+   
+    .custom-card{
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)
+          );
+          background-color: transparent;
+        backdrop-filter: blur(0.3rem);
+       
+    }
+}
+
+.team-section{
+    .team-card {
+        height: 300px;
+        background-image: linear-gradient(
+            45deg,
+            #fdd044 0%,
+            #fed350 53%,
+            #a2f1de 20%,
+            #74d8bb 100%
+          );
+        .box{
+            img{
+                width: 60px;
+                height: 60px;
+                inset: 0;
+                margin: 0 auto;
+                top: -24%;
+
+            }
+        }
+    }
+}
