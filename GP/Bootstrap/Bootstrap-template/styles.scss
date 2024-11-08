@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(34, 56, 82, 0.9);
+}
+
+.main-section{
+    min-height: 100vh;
+    background-image: linear-gradient(to left, rgb(36, 59, 85), rgb(20, 30, 48));
+    .fancy-border-radius{
+        width: 300px;
+        height: 250px;
+        border-radius: 30% 70% 37% 63% / 33% 33% 67% 67%;
+    }
+}
+
+.custom-shape-divider-bottom-1730543078 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1730543078 svg {
+    position: relative;
+    display: block;
+    width: calc(152% + 1.3px);
+    height: 143px;
+}
+
+.custom-shape-divider-bottom-1730543078 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.profile-section{
+    img{
+        width: 250px;
+        height: auto;
+        border: 10px solid aqua;
+        box-shadow: -10px 10px, -15px 15px 20px;
+        transform: skewY(5deg);
+    }
+    p{
+        text-indent: 2rem;
+    }
+}
